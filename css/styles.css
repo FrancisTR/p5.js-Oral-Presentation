@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(9, 55, 85);
+    color: white;
+}
+
+
+section{ /*Background*/
+    width: 100%;
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid red; */
+}
