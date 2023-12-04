@@ -31,7 +31,6 @@ Do research on:
 - John T
 - Matt L
 
-
 ## License
 This is under the MIT License.
 
