@@ -28,7 +28,7 @@ Do research on:
 
 ## Group Members
 - Francis T.
-- John T
+- John T.
 - Matt L
 
 
