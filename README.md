@@ -29,7 +29,8 @@ Do research on:
 ## Group Members
 - Francis T.
 - John T
-- Matt L
+- Matt L.
+
 
 ## License
 This is under the MIT License.
