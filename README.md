@@ -29,7 +29,7 @@ Do research on:
 ## Group Members
 - Francis T.
 - John T
-- Matt L
+- Matt L.
 
 
 ## License
