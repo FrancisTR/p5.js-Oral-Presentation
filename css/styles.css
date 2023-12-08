@@ -126,6 +126,9 @@ body{
 .TwoSlide h4{
     font-weight: bold;
 }
+.TwoSlide ul{
+    font-size: 1em;
+}
 
 /* Slide Three CSS */
 .ThreeSlide .JS{
