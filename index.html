@@ -4,9 +4,13 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="shortcut icon" type="x-icon" href="https://francistr.github.io/Images/WebSiteIcon.png" />
 
   	<link rel="stylesheet" href="css/foundation.css">
   	<link rel="stylesheet" href="css/styles.css">
+
+	<!--Highlight JS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/stackoverflow-dark.min.css">
   	<title>p5.js Presentation</title>
   </head>
 
@@ -23,47 +27,145 @@
 			<div data-slides>
 
 				<!-- Slide One -->
-				<section class="slide OneSlide" data-active>
-					<div class="OneSlideTitle">
-						<h1>p5.js Presentation</h1>
-						<h4>By Francis, Matt, John</h4>
+				<section class="slide grid-container" data-active>
+					<div class="OneSlide grid-x grid-margin-x">
+						<div class="cell OneSlideTitle">
+							<h1>p5.js</h1>
+							<h4>By Francis, Matt, John</h4>
+						</div>
+						<div class="cell">
+							<img src="img/p5.png"/>
+						</div>
 					</div>
-					<img src="img/p5.png"/>
 				</section>
 			
 				<!-- Slide Two -->
-				<section class="slide TwoSlide">
-					<h1 class="slideTitle">What is p5.js?</h1>
-					<p>It is a JS Library that used mainly for Artist, Designers, and people in education. p5.js allows individuals to express their creativity using code!</p>
-					<p>Two main functions that are needed for p5.js</p>
-					<ul>
-						<li>setup() - runs once</li>
-						<li>draw() - continiously run in the backround (calling a function in a loop)</li>
-					</ul>
-					<p>The canvas can be a certain fixed width/length or be the entire web page</p>
-					<p>Some p5.js features:</p>
-					<ol>
-						<li>text</li>
-						<li>video</li>
-						<li>webcam</li>
-						<li>sound</li>
-					</ol>
+				<section class="slide grid-container">
+					<div class="TwoSlide grid-x grid-margin-x">
+						<h1 class="cell slideTitle">What is p5.js?</h1>
+						<div class="cell Desc">
+							<h5>It is a JS Library that used mainly for Artist, Designers, and people in education. p5.js allows individuals to express their creativity using code!</h5>
+							<img src="img/p5Img1.png"/>
+						</div>
+						<div class="cell">
+							<h4>Some p5.js features:</h4>
+							<ol>
+								<li>Text</li>
+								<li>Webcam</li>
+								<li>Sound</li>
+							</ol>
+						</div>
+					</div>
 				</section>
-			
+
 				<!-- Slide Three -->
-				<section class="slide ThreeSlide">
-					<h1 class="slideTitle">Situations that is useful</h1>
+				<section class="slide grid-container">
+					<div class="ThreeSlide grid-x grid-margin-x">
+						<h1 class="cell slideTitle">Requirements for p5.js</h1>
 
-					<div class="originalcircle">
+						<div class="cell HTML large-6">
+							<h4>1. HTML</h4>
+							<div class="displaySourceCode">
+								<pre>
+									<code>
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;!-- Required --&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- More p5.js options --&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
 
-					</div>
-					<div class="p5circle">
+&lt;body&gt;
+    &lt;!-- Required JS --&gt;
+    &lt;script src=&quot;sample.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+
+
+						<div class="cell JS large-6">
+							<h4>2. JavaScript</h4>
+							<div class="displaySourceCode">
+								<pre>
+									<code>
+// https://p5js.org/get-started/
+function setup(){
+  //Code in this block is run once
+  createCanvas(400, 400); //size of your canvas
+}
+
+function draw(){
+  //Code in this block is run constantly
+  background(220); //color from 0-255
+}
+									</code>
+								</pre>
+							</div>
+						</div>
 
 					</div>
 				</section>
-			
+
+
 				<!-- Slide Four -->
-				<section class="slide FourSlide">
+				<section class="slide grid-container">
+					<div class="FourSlide grid-x grid-margin-x">
+						<h1 class="cell slideTitle">Situations that is useful (Circle Example)</h1>
+						<div class="cell circle">
+							<img src="img/circle.png" />
+						</div>
+						<div class="cell medium-6 originalcircle">
+							<h4>1. Vanilla</h4>
+							<div class="displaySourceCode">
+								<pre>
+									<code>
+&lt;!-- HTML and CSS --&gt;
+&lt;div class=&quot;circleSample&quot;&gt;&lt;/div&gt;
+
+&lt;style&gt;
+  .circleSample{
+   width: 5em;
+   height: 5em;
+   background-color: green;
+   border-radius: 50%;
+  }
+&lt;/style&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+
+						<div class="cell medium-6 p5circle">
+							<h4>2. p5.js</h4>
+							<div class="displaySourceCode">
+								<pre>
+									<code>
+function draw(){
+  //Code in this block is run constantly
+  background(220); //color from 0-255
+  fill('green');
+  circle(20, 20, 20);
+}
+									</code>
+								</pre>
+							</div>
+
+						</div>
+					</div>
+				</section>
+			
+
+
+
+
+
+
+
+				<!-- Slide Five -->
+				<section class="slide FiveSlide">
 					<h1 class="slideTitle">Where is it used usually?</h1>
 					<p>p5.js is mainly used in academic and web design contexts. The majority of usescases are for unique and thoughtful audio/visual projects built with code.</p>
 					
@@ -107,8 +209,8 @@
 					</ul>
 				</section>
 			
-				<!-- Slide Five -->
-				<section class="slide FiveSlide">
+				<!-- Slide Six -->
+				<section class="slide SixSlide">
 					<h1 class="slideTitle">Similar/Competing frameworks</h1>
 					<!-- Processing and 3js -->
 					<img src="img/Processing.png" alt="Processing Logo" width="100">
@@ -128,43 +230,55 @@
 					</p>
 				</section>
 			
-				<!-- Slide Six -->
-				<section class="slide SixSlide">
-					<h1 class="slideTitle">Code demonstration</h1>
-					<h3>Matt Sample</h3>
-					<h3>John Sample</h3>
-					<div class="responsive-embed">
-						<iframe src="https://editor.p5js.org/johntran038/full/kb-L1C1gM" width="500" height="500"></iframe>
+				<!-- Slide Seven -->
+				<section class="slide grid-container">
+					<div class="SevenSlide grid-x grid-margin-x">
+						<h1 class="cell slideTitle">Code Demonstration</h1>
+						<div class="cell ProjectsDemo grid-x grid-margin-x">
+							<div class="cell medium-7 MattSample">
+								<h3>Matt Sample</h3>
+								<p>Sample text: <a href="" target="_blank">Sample</a></p>
+							</div>
+							<div class="cell medium-5 sampleImage">
+								<img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" draggable="false"/>
+							</div>
+	
+							<div class="cell medium-7 JohnSample">
+								<h3>John Sample</h3>
+								<p>The rocketship can shoot lasers via voice input, this does not work in embeded iframes, so to see that feature: <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM" target="_blank">Sample</a></p>
+							</div>
+							<div class="cell medium-5 sampleImage">
+								<img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" draggable="false"/>
+							</div>
+	
+							<div class="cell medium-7 FrancisSample">
+								<h3>Francis Sample</h3>
+								<p>2D Rhythm Game: <a href="https://projectrhythmswipe.netlify.app/" target="_blank">Sample</a></p>
+							</div>
+							<div class="cell medium-5 sampleImage">
+								<img src="https://francistr.github.io/Images/RhythmSwipe.png" draggable="false"/>
+							</div>
+						</div>
 					</div>
-					<p>
-						The rocketship can shoot lasers via voice input, this does not work in embeded iframes, so to see that feature
-						<a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM" target="_blank">click here</a>.
-					</p>
-					
-					<h3>Francis Sample</h3>
-					<div class="responsive-embed">
-						<iframe src="https://francistr.github.io/p5.js-AudioVisualizer/" width="500" height="500"></iframe>
-					</div>
-					<p>
-						The p5.js project where it shows Sonic, Tails, and Amy singing "Million Dreams". Note that this is an AI cover and the original music goes to the respected owner. For the full site, 
-						<a href="https://francistr.github.io/p5.js-AudioVisualizer/" target="_blank">click here</a>.
-					</p>
-
-
-					<p>
-						p5.js to the limits: 
-						<a href="https://projectrhythmswipe.netlify.app/" target="_blank">Rhythm Swipe</a>.
-					</p>
 				</section>
 
-				<!-- Slide Seven -->
-				<section class="slide LastSlide">
-					<h1 class="LastSlideTitle">The End</h1>
+				<!-- Slide Eight -->
+				<section class="slide grid-container">
+					<div class="LastSlide grid-x grid-margin-x">
+						<h1 class="cell LastSlideTitle">The End</h1>
+						<div class="cell">
+							<img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif"/>
+						</div>
+					</div>
 				</section>
 			</div>
 			
 		</div>
 	</div>
 	<script src="slide.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
   </body>
 </html>
