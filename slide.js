@@ -31,16 +31,29 @@ buttons.forEach(button => {
   })
 })
 
+/*
+CUSrs to 0, nothing,TOM FUNCTION TO JUMP TO A SPECIFIC SLIDE (first slide at 0)
+HELPFUL WHEN YOU DO LIVE SERVER AND AUTO UPDATE DOESNT RESET YOU TO THE FIRST SLIDE
+*/
+// window.onload = jump(); //set parameter to 0, empty, or just comment this line
+function jump(num){
+    if(num == null){
+        num = 0;
+    }
+    for(let i=0; i<num; i++){
+        document.getElementById("carousel-button next").click();
+    }
+}
 
 document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 37) {
+    if (event.code == "ArrowLeft") {
         // Cancel the default action, if needed
         event.preventDefault();
         // Trigger the button element with a click
         document.getElementById("carousel-button prev").click();
     }
 
-    if (event.keyCode === 39) {
+    if (event.code == "ArrowRight") {
         // Cancel the default action, if needed
         event.preventDefault();
         // Trigger the button element with a click

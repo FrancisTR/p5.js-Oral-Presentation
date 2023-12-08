@@ -211,23 +211,41 @@ function draw(){
 			
 				<!-- Slide Six -->
 				<section class="slide SixSlide">
-					<h1 class="slideTitle">Similar/Competing frameworks</h1>
-					<!-- Processing and 3js -->
-					<img src="img/Processing.png" alt="Processing Logo" width="100">
-					<h3>Processing</h3>
-					<p>
-						Processing is an open-source IDE that is also serves as a creative tool that is made by the the same people that made p5.js. Both share mostly the same purpose and have similar functions like setup() and draw(). The main difference being that it is Java-based programming environment whereas p5.js is a JavaScript library.
-						<h4>When should you use processing over p5.js</h4>
-						Unlike p5.js Processing is not a well suited for web application, it is optimized for desktop graphics, which can be preferrable for graphics-intensive applications. Additionally Processing has built-in support for Arduino implementation.
-					</p>
-					
-					<img src="img/threejs.png" alt="Processing Logo" width="100">
-					<h3>three.js</h3>
-					<p>
-						three.js is a JavaScript library to create 3D visualizations in web browsers. The workflow and learning curve of three.js is different from p5.js since you need some understanding of 3D graphic concepts.
-						<h4>When should you use three.js over p5.js</h4>
-						Obviously, you should use three.js if you would like to make 3D visuals. With three.js, you can work with WebGL features, allowing you to have optimized performance.
-					</p>
+					<h1 class="slideTitle">Similar Libraries</h1>
+
+					<div class="grid-container" style="margin-top: 3rem;">
+						<div class="grid-x grid-margin-x">
+							<div class="cell small-4">
+								<img src="img/paperjs.png" alt="">
+							</div>
+							<div class="cell small-8 grid-container">
+								<h2>Paper.js</h2>
+								<ul>
+									<li>Good at using vector graphics</li>
+									<li>Used for graphic design, illustration, etc.</li>
+									<li>Supports layer management</li>
+									<li>Has special mathematical methods</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid-container" style="margin-top: 1rem;">
+						<div class="grid-x grid-margin-x">
+							<div class="cell small-4">
+								<img src="img/threejs.png" alt="">
+							</div>
+							<div class="cell small-8 grid-container">
+								<h2>three.js</h2>
+								<ul>
+									<li>Good to create 3D visuals</li>
+									<li>Used for architecture, games, and VR</li>
+									<li>Higher learning Curve</li>
+									<li>You can work with WebGL features</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</section>
 			
 				<!-- Slide Seven -->
@@ -248,7 +266,7 @@ function draw(){
 								<p>The rocketship can shoot lasers via voice input, this does not work in embeded iframes, so to see that feature: <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM" target="_blank">Sample</a></p>
 							</div>
 							<div class="cell medium-5 sampleImage">
-								<img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" draggable="false"/>
+								<img src="/img/rocket_sample.png" draggable="false"/>
 							</div>
 	
 							<div class="cell medium-7 FrancisSample">
