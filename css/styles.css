@@ -126,6 +126,9 @@ body{
 .TwoSlide h4{
     font-weight: bold;
 }
+.TwoSlide ul{
+    font-size: 1em;
+}
 
 /* Slide Three CSS */
 .ThreeSlide .JS{
@@ -149,6 +152,30 @@ body{
 }
 
 /* Slide Five CSS */
+.FiveSlide{
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.FiveSlide .Desc{
+    margin-bottom: 3rem;
+    align-items: center;
+    text-align: center;
+}
+.FiveSlide img{
+    width: 17em;
+    height: 17em;
+    object-fit: cover;
+}
+.FiveSlide h4{
+    font-weight: bold;
+    text-align: center;
+}
+.FiveSlide ul{
+    font-size: 1em;
+}
+.FiveSlide p{
+    text-align: center;
+}
 
 /* Slide Six CSS */
 ul{
