@@ -2,15 +2,17 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(9, 55, 85);
+    background-color: rgb(69, 12, 130);
     color: white;
+}
+a{
+    color: orange;
 }
 
 
 /* Nav buttons */
 .carousel{
     margin: 20px;
-    height: 100vh;
     position: relative;
 }
 .slide{
@@ -30,16 +32,13 @@ body{
     z-index: 2;
     background: none;
     border: none;
-    font-size: 4rem;
-    top: 94%;
+    width: 1.8em;
+    height: 100%;
+    font-size: 1rem;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.913);
     cursor: pointer;
-    border-radius: .25rem;
-    padding-bottom: .7rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(0, 140, 255);
 }
 .carousel-button:hover,
 .carousel-button:focus{
@@ -51,14 +50,16 @@ body{
     display: none;
 }
 .carousel-button:focus{
-    outline: 1px solid black;
+    outline: 1px solid rgb(0, 195, 255);
 }
 
 .carousel-button.prev{
-    left: .5rem;
+    top: 50%;
+    left: 0rem;
 }
 .carousel-button.next{
-    right: .5rem;
+    top: 50%;
+    right: 0rem;
 }
 
 
@@ -66,6 +67,7 @@ body{
 /* General things for all slides */
 .slideTitle{
     margin-top: 1em;
+    word-break: break-all;
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
@@ -100,9 +102,6 @@ body{
     height: 17em;
     object-fit: cover;
 }
-.OneSlideTitle{
-    margin-top: 1em;
-}
 .OneSlide h1{
     font-size: 3em;
     font-weight: bold;
@@ -112,6 +111,9 @@ body{
     font-weight: bold;
 }
 
+
+
+
 /* Slide Two CSS */
 .TwoSlide .Desc{
     margin-bottom: 3rem;
@@ -119,21 +121,34 @@ body{
     text-align: center;
 }
 .Desc img{
-    width: 39em;
-    height: 13em;
+    width: 35em;
+    height: 10em;
     object-fit: cover;
 }
 .TwoSlide h4{
+    font-size: 1.7em;
     font-weight: bold;
 }
 .TwoSlide ul{
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
+.TwoSlide .historySub{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+
 
 /* Slide Three CSS */
 .ThreeSlide .JS{
     margin-bottom: 3rem;
 }
+
+
 
 /* Slide Four CSS */
 .FourSlide .circle{
@@ -150,6 +165,9 @@ body{
 .FourSlide .p5circle{
     margin-bottom: 3em;
 }
+
+
+
 
 /* Slide Five CSS */
 .FiveSlide{
@@ -169,6 +187,7 @@ body{
 .FiveSlide h4{
     font-weight: bold;
     text-align: center;
+    font-size: 2em;
 }
 .FiveSlide ul{
     font-size: 1em;
@@ -177,11 +196,26 @@ body{
     text-align: center;
 }
 
+
+
+
 /* Slide Six CSS */
-ul{
+.SixSlide ul{
     padding-left: 1rem;
-    font-size: 1.9em;
+    font-size: 1.3em;
 }
+.SixSlide img{
+    width: 17em;
+    height: 17em;
+    object-fit: cover;
+}
+.SixSlide h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
 
 /* Slide Seven CSS */
 .ProjectsDemo{
@@ -189,19 +223,23 @@ ul{
 }
 
 .ProjectsDemo .sampleImage{
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
+.ProjectsDemo h3{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.ProjectsDemo p{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+
 
 /* Slide Eight CSS */
 .LastSlide{
     text-align: center;
     align-items: center;
-}
-.LastSlideTitle{
-    margin-top: 1em;
-}
-.LastSlide h1{
-    font-size: 3em;
-    font-weight: bold;
 }
 
