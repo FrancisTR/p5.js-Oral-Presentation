@@ -35,7 +35,7 @@ Do research on:
 
 ### Code demonstration of particularly useful features
 
-- Sample from Matt L.
+- <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM">Sample from Matt L</a>.
 - <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM">Sample from John T</a>.
 - Sample from Francis T.
 - Show the Full Power of p5.js
