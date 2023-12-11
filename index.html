@@ -28,24 +28,28 @@
 				<!-- Slide One -->
 				<section class="slide grid-container" data-active>
 					<div class="OneSlide grid-x grid-margin-x">
-						<div class="cell OneSlideTitle">
-							<h1>p5.js</h1>
+						<div class="cell">
+							<h1 class="slideTitle">p5.js</h1>
 							<h4>By Francis, Matt, John</h4>
 						</div>
 						<div class="cell">
-							<img src="img/p5.png"/>
+							<img src="img/p5.png" draggable="false"/>
 						</div>
 					</div>
 				</section>
 			
+
 				<!-- Slide Two -->
 				<section class="slide grid-container">
 					<div class="TwoSlide grid-x grid-margin-x">
-						<h1 class="cell slideTitle">What is p5.js?</h1>
+						<h1 class="cell slideTitle">Overview of p5.js</h1>
 						<div class="cell Desc">
 							<h5>It is a JS Library that used mainly for Artist, Designers, and people in education. p5.js allows individuals to express their creativity using code!</h5>
-							<img src="img/p5Img1.png"/>
+							<img src="img/p5Img1.png" draggable="false"/>
+							<br>
+							<i>Example of artwork using p5.js</i>
 						</div>
+						<h2 class="cell historySub">History</h2>
 						<div class="cell large-4">
 							<h4>Processing:</h4>
 							<ul>
@@ -64,14 +68,15 @@
 						</div>
 						<div class="cell large-4">
 							<h4>Some p5.js features:</h4>
-							<ol>
+							<ul>
 								<li>Text</li>
 								<li>Webcam</li>
 								<li>Sound</li>
-							</ol>
+							</ul>
 						</div>
 					</div>
 				</section>
+
 
 				<!-- Slide Three -->
 				<section class="slide grid-container">
@@ -125,12 +130,13 @@ function draw(){
 				</section>
 
 
+
 				<!-- Slide Four -->
 				<section class="slide grid-container">
 					<div class="FourSlide grid-x grid-margin-x">
 						<h1 class="cell slideTitle">Situations that is useful (Circle Example)</h1>
 						<div class="cell circle">
-							<img src="img/circle.png" />
+							<img src="img/circle.png" draggable="false" />
 						</div>
 						<div class="cell medium-6 originalcircle">
 							<h4>1. Vanilla</h4>
@@ -223,26 +229,30 @@ function draw(){
 							</div>
 							<div class="cell medium-4">
 								<p>
-									<a href="https://nobocoto.pl/" target="_blank">https://nobocoto.pl/</a> <br>
-									<a href="https://finiam.com/" target="_blank">https://finiam.com/</a> <br>
-									<a href="https://thisisdash.com/" target="_blank">https://thisisdash.com/</a> <br>
-									<a href="https://www.alastairgray.com/" target="_blank">https://www.alastairgray.com/</a>
+									<a href="https://nobocoto.pl/" target="_blank">Nobocoto</a> <br>
+									<a href="https://finiam.com/" target="_blank">Finiam</a> <br>
+									<a href="https://thisisdash.com/" target="_blank">Thisisdash</a> <br>
+									<a href="https://www.alastairgray.com/" target="_blank">Alastairgray</a>
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>
 			
-				<!-- Slide Six -->
-				<section class="slide SixSlide">
-					<h1 class="slideTitle">Similar Libraries</h1>
 
-					<div class="grid-container" style="margin-top: 3rem;">
-						<div class="grid-x grid-margin-x">
-							<div class="cell small-4">
-								<img src="img/paperjs.png" alt="">
+
+
+				<!-- Slide Six -->
+				<section class="slide grid-container">
+					<div class="SixSlide grid-x grid-margin-x">
+
+						<h1 class="cell slideTitle">Similar Libraries</h1>
+
+						<div class="cell grid-x grid-margin-x">
+							<div class="cell medium-6">
+								<img src="img/paperjs.png" draggable="false" />
 							</div>
-							<div class="cell small-8 grid-container">
+							<div class="cell medium-6">
 								<h2>Paper.js</h2>
 								<ul>
 									<li>Good at using vector graphics</li>
@@ -252,14 +262,12 @@ function draw(){
 								</ul>
 							</div>
 						</div>
-					</div>
 
-					<div class="grid-container" style="margin-top: 1rem;">
-						<div class="grid-x grid-margin-x">
-							<div class="cell small-4">
-								<img src="img/threejs.png" alt="">
+						<div class="cell grid-x grid-margin-x">
+							<div class="cell medium-6">
+								<img src="img/threejs.png" draggable="false" />
 							</div>
-							<div class="cell small-8 grid-container">
+							<div class="cell medium-6">
 								<h2>three.js</h2>
 								<ul>
 									<li>Good to create 3D visuals</li>
@@ -269,47 +277,57 @@ function draw(){
 								</ul>
 							</div>
 						</div>
+
 					</div>
 				</section>
 			
+
+
+
 				<!-- Slide Seven -->
 				<section class="slide grid-container">
 					<div class="SevenSlide grid-x grid-margin-x">
 						<h1 class="cell slideTitle">Code Demonstration</h1>
+
 						<div class="cell ProjectsDemo grid-x grid-margin-x">
+
+
 							<div class="cell medium-7 MattSample">
 								<h3>Matt Sample</h3>
 								<p>Simple Timer: <a href="https://matt-lao.github.io/p5.js-timer/" target="_blank">Sample</a></p>
 							</div>
 							<div class="cell medium-5 sampleImage">
-								<a href="https://github.com/matt-lao/p5.js-timer"><img src="img/timer.png" draggable="false"/></a>
+								<a href="https://github.com/matt-lao/p5.js-timer" target="_blank"><img src="img/timer.png" draggable="false"/></a>
 							</div>
 	
+
 							<div class="cell medium-7 JohnSample">
 								<h3>John Sample</h3>
-								<p>The rocketship can shoot lasers via voice input, this does not work in embeded iframes, so to see that feature: <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM" target="_blank">Sample</a></p>
+								<p>The rocketship can shoot lasers via voice input: <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM" target="_blank">Sample</a></p>
 							</div>
 							<div class="cell medium-5 sampleImage">
 								<img src="img/rocket_sample.png" draggable="false"/>
 							</div>
 	
+
 							<div class="cell medium-7 FrancisSample">
 								<h3>Francis Sample</h3>
-								<p>2D Rhythm Game: <a href="https://projectrhythmswipe.netlify.app/" target="_blank">Sample</a></p>
+								<p>2D Rhythm Game: <a href="https://deploy-preview-55--projectrhythmswipe.netlify.app/" target="_blank">Sample</a></p>
 							</div>
 							<div class="cell medium-5 sampleImage">
-								<img src="https://francistr.github.io/Images/RhythmSwipe.png" draggable="false"/>
+								<a href="https://github.com/FrancisTR/Rhythm-Swipe" target="_blank"><img src="https://francistr.github.io/Images/RhythmSwipe.png" draggable="false"/></a>
 							</div>
 						</div>
+
 					</div>
 				</section>
 
 				<!-- Slide Eight -->
 				<section class="slide grid-container">
 					<div class="LastSlide grid-x grid-margin-x">
-						<h1 class="cell LastSlideTitle">The End</h1>
+						<h1 class="cell slideTitle">The End</h1>
 						<div class="cell">
-							<img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif"/>
+							<img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" draggable="false" />
 						</div>
 					</div>
 				</section>
