@@ -8,12 +8,12 @@ An Interactive Web Page that showcase p5.js for CISC375-02 Web Development cours
 
 ### General overview of framework
 
-- What is p5.js?
+- Overview of p5.js / History
+- Requirements of using p5.js
 
 ### In what situations is this framework useful?
 
-- Makes coding simplier and efficient when it comes to creating art (Creative Coding).
-- Demonstate of creating simple shapes using Vanilla JavaScript VS. p5.js.
+- Demonstate of creating a simple circle using Vanilla VS. p5.js.
 
 ### Where is it used (and why)?
 
@@ -28,17 +28,14 @@ p5.js is mainly used in academic and web design contexts. The majority of usesca
 
 ### What are similar / competing frameworks?
 
-Do research on:
-
-- Processing
+- Paper.js
 - three.js
 
 ### Code demonstration of particularly useful features
 
-- <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM">Sample from Matt L</a>.
+- <a href="https://matt-lao.github.io/p5.js-timer/">Sample from Matt L</a>.
 - <a href="https://editor.p5js.org/johntran038/sketches/kb-L1C1gM">Sample from John T</a>.
-- Sample from Francis T.
-- Show the Full Power of p5.js
+- <a href="https://github.com/FrancisTR/Rhythm-Swipe">Sample from Francis T</a>.
 
 ## Group Members
 
